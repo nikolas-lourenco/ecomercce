@@ -3,8 +3,8 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 
-# Import the functions from the updated data_ingestion.py
-from data_ingestion import load_csv_to_s3, transform_to_parquet
+# Import the functions from data_ingestao.py
+from src.data_ingestao import load_csv_to_s3, transform_to_parquet
 
 # Define the default_args dictionary
 default_args = {
